@@ -1,0 +1,69 @@
+.portfolio {
+  min-height: 100vh;
+  background: $color-white;
+  text-align: center;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 5rem;
+    height: 3px;
+    background: darken($color-dark-1, 10);
+    margin-top: 8rem;
+  }
+  &__heading {
+    font-size: 5rem;
+    color: darken($color-dark-1, 10);
+    font-weight: 700;
+  }
+}
+
+.flex-container-2 {
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 0 4rem;
+}
+
+.flex-item {
+  position: relative;
+  flex: 1;
+  flex-basis: 30%;
+  margin-bottom: 3rem;
+  transition: all 0.4s;
+
+  a {
+    display: inline-block;
+  }
+}
+
+.flex-image {
+  border-radius: 5px;
+  width: auto;
+  height: auto;
+  max-width: 95%;
+  max-height: 95%;
+  transition: all 0.2s;
+  box-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.4);
+}
+.image-text {
+  font-size: 2rem;
+  color: $color-white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 200%);
+  opacity: 0;
+  transition: all 0.4s;
+}
+.flex-item:hover .image-text {
+  transform: translate(-50%, -50%);
+  opacity: 1;
+}
+.flex-item:hover .flex-image {
+  filter: blur(3px) brightness(80%);
+  box-shadow: 1rem 1.5rem 2rem rgba($color-black, 0.4);
+}
+.flex-item:hover {
+  transform: scale(1.01) translateY(-10px);
+  z-index: 800;
+}

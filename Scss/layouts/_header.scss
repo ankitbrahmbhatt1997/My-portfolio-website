@@ -1,6 +1,6 @@
 header {
   background: repeating-linear-gradient(
-    -110deg,
+    -70deg,
     $color-grey-1,
     $color-grey-1 50%,
     $color-grey-2 50%,
@@ -8,21 +8,21 @@ header {
   );
   height: 100vh;
   .header__hero-image {
-    background: url("../img/hero-img-1.jpeg");
-    height: 40rem;
-    width: 30rem;
+    flex: 1;
+    background: url("../img/hero-img-1.png");
+    height: 100vh; // border-radius: 50%; //
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
   }
   .header__text-box {
-    position: absolute; // position: absolute; // top: 30%; // left: 7%; // transform: translate(-50%, -50%)
-    top: 30%;
-    left: 1.5rem;
+    flex: 1;
     white-space: nowrap;
+    transform: translateX(5rem);
   }
 }
 .header-container {
-  position: relative;
+  display: flex;
   height: 100%;
+  align-items: center;
 }

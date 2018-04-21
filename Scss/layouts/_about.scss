@@ -1,0 +1,35 @@
+#about {
+  min-height: 100vh;
+}
+
+.about-container {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  padding: 1rem;
+}
+
+.about-image {
+  flex: 1;
+
+  background: url("https://images.pexels.com/photos/91227/pexels-photo-91227.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 50rem;
+  margin-left: 6rem;
+  clip-path: circle(40% at 50% 50%);
+}
+
+.sec-head-cont {
+  flex: 1;
+  align-self: flex-start;
+  margin-right: 6rem;
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 5rem;
+    height: 3px;
+    background: darken($color-dark-1, 10);
+  }
+}

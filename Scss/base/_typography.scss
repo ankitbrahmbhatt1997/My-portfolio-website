@@ -12,3 +12,26 @@
     color: $color-dark-1;
   }
 }
+
+.secondary-heading {
+  font-size: 5rem;
+  color: darken($color-dark-1, 10);
+  &--primary {
+    display: block;
+  }
+  &--sub {
+    display: block;
+  }
+}
+
+.proffesional-info {
+  font-size: 1.7rem;
+  color: $color-dark-1;
+  line-height: 3rem;
+}
+.personal-info {
+  font-size: 1.7rem;
+  color: $color-dark-1;
+  line-height: 3rem;
+  margin-top: 2rem;
+}
