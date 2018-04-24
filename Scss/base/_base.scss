@@ -8,6 +8,19 @@
 }
 html {
   font-size: 62.5%;
+
+  @include respond(tab-port) {
+    font-size: 56.5%;
+  }
+  @include respond(tab-mid) {
+    font-size: 49.5%;
+  }
+  @include respond(phone) {
+    font-size: 43%;
+  }
+  @include respond(small-phone) {
+    font-size: 35%;
+  }
 }
 body {
   line-height: 1.3;

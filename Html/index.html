@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Asap:400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
         crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -28,22 +29,22 @@
                         Home</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a href="#about_link" class="navigation__link">
                         <!-- <span>02</span> -->
                         About</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a href="#skills_link" class="navigation__link">
                         <!-- <span>03</span> -->
                         Skills</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a href="#portfolio_link" class="navigation__link">
                         <!-- <span>04</span> -->
                         Portfolio</a>
                 </li>
                 <li class="navigation__item">
-                    <a href="#" class="navigation__link">
+                    <a href="#contact_link" class="navigation__link">
                         <!-- <span>05</span> -->
                         Contact</a>
                 </li>
@@ -51,26 +52,35 @@
         </nav>
     </div>
     <header>
+        <span>
+            <img src="../img/logo-2.png" alt="logo" class="logo">
+        </span>
         <div class="header-container container">
+
+            <div class="header__hero-image">
+
+            </div>
             <div class="header__text-box">
                 <h1 class="main-heading u-margin-bottom-small ">
                     <span class="main-heading--primary">Ankit Brahmbhatt</span>
                     <span class="main-heading--sub">Front End/Back End Developer</span>
                 </h1>
                 <div class="buttons">
-                    <a href="#" class="btn btn--white">Know more</a>
-                    <a href="#" class="btn btn--transparent u-margin-left-small">Hire me</a>
+                    <a href="#about_link" class="btn btn--white">Know more</a>
+                    <a href="#contact_link" class="btn btn--transparent u-margin-left-small">Hire me</a>
                 </div>
 
             </div>
-            <div class="header__hero-image">
 
-            </div>
         </div>
 
     </header>
+    <a id="about_link"></a>
     <section id="about">
         <div class="about-container container">
+            <div class="about-image u-margin-top-large">
+
+            </div>
             <div class="sec-head-cont u-margin-top-large">
                 <h2 class="secondary-heading ">
                     <span class="secondary-heading--primary"> Know More</span>
@@ -92,11 +102,10 @@
 
 
             </div>
-            <div class="about-image u-margin-top-large">
 
-            </div>
         </div>
     </section>
+    <a id="skills_link"></a>
     <section class="skills u-padding-top-large">
         <h2 class="skills__heading u-margin-bottom-big">Primary Skills</h2>
         <div class="flex-container">
@@ -134,16 +143,22 @@
         </div>
 
     </section>
+    <a id="portfolio_link"></a>
     <section class="portfolio  ">
         <h1 class="portfolio__heading u-margin-bottom-big">Portfolio</h1>
-        <div class="flex-container-2 u-margin-bottom-medium">
+        <div class="flex-container-2 u-margin-bottom-medium container">
             <div class="flex-item">
                 <a href="#" class="flex-link">
-                    <img class="flex-image" src="https://images.pexels.com/photos/325707/pexels-photo-325707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-                        alt="project 1">
+                    <!-- <img class="flex-image" src="https://images.pexels.com/photos/325707/pexels-photo-325707.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                        alt="project 1"> -->
+                    <img class="flex-image" src="../img/Storybooks.PNG" alt="project 1">
 
                 </a>
-                <span class="image-text">Click to View</span>
+                <span class="image-text">
+                    <h2>StoryBooks</h2>
+                    <p>Created with : Html , Materialize Css , Node.js , Mongodb and Google oauth</p>
+                    <a href="#" class="btn btn--white u-margin-top-small">Launch</a>
+                </span>
 
             </div>
             <div class="flex-item">
@@ -152,7 +167,11 @@
                         alt="project 1">
 
                 </a>
-                <span class="image-text">Click to View</span>
+                <span class="image-text">
+                    <h2>My Portfolio</h2>
+                    <p>Created with : Html , Css ,Sass,Javascript, Node.js</p>
+                    <a href="#" class="btn btn--white u-margin-top-small">Launch</a>
+                </span>
             </div>
             <div class="flex-item">
                 <a href="#" class="flex-link">
@@ -160,7 +179,13 @@
                         alt="project 1">
 
                 </a>
-                <span class="image-text">Click to View</span>
+                <span class="image-text">
+                    <span class="image-text">
+                        <h2>Vidjot</h2>
+                        <p>Created with : Html , Css ,Sass,Javascript, Node.js , Mongodb</p>
+                        <a href="#" class="btn btn--white u-margin-top-small">Launch</a>
+                    </span>
+                </span>
             </div>
             <div class="flex-item">
                 <a href="#" class="flex-link">
@@ -168,7 +193,13 @@
                         alt="project 1">
 
                 </a>
-                <span class="image-text">Click to View</span>
+                <span class="image-text">
+                    <span class="image-text">
+                        <h2>Music Website</h2>
+                        <p>Created with : Html , Css ,Sass,Javascript, Node.js</p>
+                        <a href="#" class="btn btn--white u-margin-top-small">Launch</a>
+                    </span>
+                </span>
             </div>
             <div class="flex-item">
                 <a href="#" class="flex-link">
@@ -189,6 +220,7 @@
 
         </div>
     </section>
+    <a id="contact_link"></a>
     <section class="contact">
         <div class="bg-video">
             <video class="bg-video__content" autoplay loop muted>
@@ -212,6 +244,7 @@
             </form>
         </div>
     </section>
+    <script src="../JS/myportfolio.js"></script>
 </body>
 
 </html>

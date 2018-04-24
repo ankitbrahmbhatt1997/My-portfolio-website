@@ -1,5 +1,5 @@
 .portfolio {
-  min-height: 100vh;
+  // min-height: 100vh;
   background: $color-white;
   text-align: center;
   &::before {
@@ -27,43 +27,75 @@
 .flex-item {
   position: relative;
   flex: 1;
-  flex-basis: 30%;
+  flex-basis: 40%;
   margin-bottom: 3rem;
-  transition: all 0.4s;
 
-  a {
+  transition: all 0.4s;
+  overflow: hidden;
+  span {
+    display: block;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+  }
+  .flex-link {
     display: inline-block;
+    width: 90%;
+    height: 90%;
+    &::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+
+      background-color: $color-white;
+      transition: all 0.8s;
+    }
   }
 }
 
 .flex-image {
   border-radius: 5px;
-  width: auto;
-  height: auto;
-  max-width: 95%;
-  max-height: 95%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
   transition: all 0.2s;
   box-shadow: 0.5rem 1rem 1rem rgba($color-black, 0.4);
+  object-fit: cover;
 }
 .image-text {
   font-size: 2rem;
-  color: $color-white;
+  color: $color-dark-2;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, 200%);
+  transform: translate(-50%, -50%);
   opacity: 0;
-  transition: all 0.4s;
+  transition: opacity 0.8s;
+  z-index: -8000;
+  h2 {
+    margin-bottom: 1rem;
+  }
 }
 .flex-item:hover .image-text {
-  transform: translate(-50%, -50%);
+  // transform: translate(-50%, -50%);
+  z-index: 10;
   opacity: 1;
 }
 .flex-item:hover .flex-image {
-  filter: blur(3px) brightness(80%);
+  // filter: blur(3px) brightness(80%);
   box-shadow: 1rem 1.5rem 2rem rgba($color-black, 0.4);
 }
 .flex-item:hover {
-  transform: scale(1.01) translateY(-10px);
+  transform: scale(1.05);
   z-index: 800;
+}
+.flex-item:hover a::after {
+  opacity: 1;
 }

@@ -2,8 +2,15 @@
   &--primary {
     display: block;
     font-size: 7rem;
+
     font-weight: 500;
     color: $color-dark-2;
+    @include respond(phone) {
+      font-size: 6.5rem;
+    }
+    @include respond(small-phone) {
+      font-size: 5.7rem;
+    }
   }
   &--sub {
     display: block;

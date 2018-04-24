@@ -2,6 +2,26 @@
   min-height: 100vh;
   background: $color-grey-2;
   text-align: center;
+  @include respond(tab-land) {
+    min-height: 80vh;
+    // margin-bottom: 4rem;
+  }
+  @include respond(tab-port) {
+    min-height: 75vh;
+    // margin-bottom: 4rem;
+  }
+  @include respond(tab-mid) {
+    min-height: 70vh;
+    // margin-bottom: 4rem;
+  }
+  @include respond(phone) {
+    min-height: 65vh;
+    // margin-bottom: 4rem;
+  }
+  @include respond(small-phone) {
+    min-height: 60vh;
+    // margin-bottom: 4rem;
+  }
   &::before {
     content: "";
     display: inline-block;

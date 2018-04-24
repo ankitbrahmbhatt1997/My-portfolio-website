@@ -34,7 +34,9 @@
   transform: translate(-50%, -50%);
   text-align: center;
   width: 60rem;
-
+  @include respond(small-phone) {
+    width: 50rem;
+  }
   &__heading {
     font-size: 5rem;
     color: $color-white;
@@ -55,14 +57,19 @@
       height: 4rem;
       padding: 0 0 0 5px;
       width: 49%;
+      box-shadow: 0.3rem 0.3rem 1rem rgba(#000, 0.4) inset;
+      border-radius: 3px;
     }
 
     #message {
+      font-family: Arial, Helvetica, sans-serif;
       display: block;
       width: 100%;
       padding-left: 5px;
       padding-top: 5px;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      box-shadow: 0.3rem 0.3rem 1rem rgba(#000, 0.4) inset;
+      border-radius: 3px;
     }
   }
 }
